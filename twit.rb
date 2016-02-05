@@ -1,5 +1,7 @@
-class Memo < Post
+# encoding: utf-8
+require 'twitter'
 
+class Twit<Post
   def read_from_console
     puts "Новая заметка (все, что пишите до строчки \"end\"):"
 
@@ -36,5 +38,6 @@ class Memo < Post
     # теперь прописываем свое специфичное поле
     @text = data_hash['text'].split('\n\r')
   end
+
 
 end
